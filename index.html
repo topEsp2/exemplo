@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login - bootstrap</title>
+	<link rel="icon" href="img/favicon.ico">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container margin-login">
+		<ol class="breadcrumb">
+			<li><a href="#">Home</a></li>
+			<li class="active">Login</li>
+		</ol>
+		<div class="row">
+			
+			<div class="col-md-8">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Crie uma conta</div>
+					<div class="panel-body">
+						<img id="profile-img" class="profile-img-card" src="img/avatar_2x.png" />
+						<div class="text-center">
+							<p>Não seja mais um anônimo! Cadastre-se e aproveite todos os nossos serviços.</p>
+							<button class="btn btn-primary btn-lg dataModal" data-toggle="modal" data-target="#modalCadastro">Cadastre-se</button>
+						</div>
+					</div>
+				</div> <!-- /panel -->
+			</div> <!-- /col-md-4 -->
+
+			<div class="col-md-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Login</div>
+					<form>
+						<div class="panel-body">
+							<div class="form-group">
+								<label for="user">Usuário</label>
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+									<input type="text" class="form-control" id="user" placeholder="Usuário">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="pass">Senha</label>
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
+									<input type="password" class="form-control" id="pass" placeholder="Senha">
+								</div>
+							</div>
+							<div class="checkbox">
+								<label><input type="checkbox"> Lembrar minha senha</label>
+							</div>
+						</div> <!-- /panel-body -->
+						<div class="panel-footer">
+							<div class="text-right">
+								<a href="admin.html" class="btn btn-primary">Entrar</a>
+							</div>
+						</div> <!-- /panel-footer -->
+					</form>
+				</div> <!-- /panel -->
+			</div> <!-- /col-md-4 -->
+
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+
+
+	<!-- Modal cadastro -->
+	<div class="modal fade" id="modalCadastro" data-show="true" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-plus"></span> Cadastrar</h4>
+				</div> <!-- /modal-header -->
+
+				<form class="form-horizontal">
+					
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="inputNome" class="col-sm-2 control-label">Nome</label>
+							<div class="col-sm-10">
+								<input type="text" name="nome" required class="form-control" id="inputNome">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputCPF" class="col-sm-2 control-label">CPF</label>
+							<div class="col-sm-10">
+								<input type="text" name="cpf" required class="form-control" maxlength="11" id="inputCPF" placeholder="Somente numeros">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputUser" class="col-sm-2 control-label">Usuário</label>
+							<div class="col-sm-10">
+								<input type="text" name="user" required class="form-control" id="inputUser">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPass" class="col-sm-2 control-label">Senha</label>
+							<div class="col-sm-10">
+								<input type="password" name="user" required class="form-control" id="inputPass">
+							</div>
+						</div>
+					</div> <!-- /modal-body -->
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+						<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Enviar</button>
+					</div> <!-- /modal-footer -->
+				</form>
+
+			</div> <!-- /modal-content -->
+		</div> <!-- /modal-dialog -->
+	</div> <!-- /modal fade novo evento -->
+
+	<!-- jQuery-->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
